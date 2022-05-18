@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Karla:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: hsla(203, 65%, 12%, 1);
+}
+
+main {
+  background: hsla(0, 0%, 96%, 1);
+  margin: 30px 20px;
+  padding: 35px;
+  height: calc(100vh - 60px);
+  width: calc(100vw - 40px);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul {
+  font-family: Karla, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.youWin {
+  font-family: Karla, sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+}
+
+.diceBox {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.die {
+  min-height: 48px;
+  min-width: 48px;
+  border-radius: 4px;
+  background: hsla(0, 0%, 100%, 1);
+  box-shadow: 0px 2px 2px 0px hsla(0, 0%, 0%, 0.15);
+  border: 0;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #2B283A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.green {
+  background: #59E391;
+}
+
+.die:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.18);
+}
+
+.rollButton {
+  margin: 25px;
+  min-width: 92px;
+  min-height: 36px;
+  background: hsla(248, 100%, 60%, 1);
+  border-radius: 4px;
+  box-shadow: 2px 2px 7.68px rgba(0, 0, 0, 0.36);
+  border: none;
+  font-family: Karla, sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.rollButton:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.36);
+}
